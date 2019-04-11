@@ -1,0 +1,87 @@
+.tiles{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(88, 30, 122, 0.719);
+    justify-content: center;
+    align-items: flex-end;
+}
+.tile{
+    text-align: center;
+    border-radius: 3px;
+    margin: 0 2px 70px 2px;
+    background: rgba(41, 2, 41, 0.767);
+    font-size: 1.2vmax;
+  }
+  p{
+    padding: 5px 5px 0px 5px;
+    font-size: 1vmax;
+}
+h4{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media(orientation:portrait){
+    .tile{
+        height: 220px;
+        width: 45px;
+        
+    }
+    canvas{
+        height: 30px;
+        width: 30px;
+    }
+    h4{
+        font-size: 0.9vmax;
+    }
+    
+
+}
+@media(orientation:landscape){
+    .tile{
+        height: 150px;
+        width: 70px;
+        margin: 0 2px 30px 2px;
+
+    }
+    canvas{
+        height: 30px;
+        width: 30px;
+    }
+    h4{
+        font-size: 0.9vmax;
+    }
+    
+
+}
+@media(min-width:1025px){
+    .tile{
+        height: 350px;
+        width: 140px;
+    }
+    canvas{
+        height: 60px;
+        width: 60px;
+    }
+    h4{
+        font-size: 0.9vmax;
+    }
+
+}
+@media(max-width:320px){
+    .tile{
+        height: 200px;
+        width: 42px;
+    }
+    canvas{
+        height: 30px;
+        width: 30px;
+    }
+    h4{
+        font-size: 0.9vmax;
+    }
+
+}
