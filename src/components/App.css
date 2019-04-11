@@ -54,3 +54,43 @@ a
 {
   color: beige;
 }
+
+.animation{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.603);
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+}
+.spinner{
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  border-width: 8px;
+  border-color: transparent;
+  border-style: solid;
+  border-top-color: #B7A3DF;
+  box-sizing: border-box;
+  animation: opacity 0.5s linear infinite;
+}
+
+@keyframes opacity {
+    0%{
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(180deg);
+      opacity: 0.4;
+    }
+    100%{
+      opacity: 1;
+      transform: rotate(360deg);
+    }
+  }      
+  

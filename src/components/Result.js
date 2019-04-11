@@ -9,7 +9,7 @@ let content = '';
 const {data} = props;
 const {currentData} = props;
 const week = ['Niedziela','Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota'];
-if(data){
+if(data){ 
     data.shift();
     content = (
         content = data.map(item => <Tile key={item.time} data={item}/> ) 
@@ -27,9 +27,9 @@ if(data){
     />
     <p className="current">{Math.floor(currentData.temperature)} C °</p>
     <p>{currentData.summary}</p>
-    </div> : 'animacja'}
+    </div> : ''}
     <div className="tiles">
-    {content ? content: 'animacja'}
+    {content ? content: <div className="animation"> <div className="spinner"></div> </div> }
     </div>
     
         </>

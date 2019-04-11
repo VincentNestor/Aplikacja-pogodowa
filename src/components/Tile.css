@@ -37,6 +37,9 @@ h4{
     h4{
         font-size: 0.9vmax;
     }
+    h6{
+        font-size: 5px;
+    }
     
 
 }
@@ -54,7 +57,9 @@ h4{
     h4{
         font-size: 0.9vmax;
     }
-    
+    h6{
+        font-size: 5px;
+    }
 
 }
 @media(min-width:1025px){
@@ -68,6 +73,9 @@ h4{
     }
     h4{
         font-size: 0.9vmax;
+    }
+    h6{
+        font-size: 15px;
     }
 
 }
